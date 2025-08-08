@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header - navigation -->
+    <header class="main-header p-[8px]">
+      <img src="image/nyanko sensei.jpg" alt="Logo" class="logo-tailwind" />
+      <!-- navigation menu -->
+      <!-- menampilkan menu navigasi  -->
+      <nav class="navigation">
+        <a class="border rounded-[4px] px-[8px] py-[4px]" href="#home">Home</a>
+        <a class="border rounded-[4px] px-[8px] py-[4px]" href="#profile"
+          >Our Profile</a
+        >
+        <a class="border rounded-[4px] px-[8px] py-[4px]" href="#porto"
+          >Portofolio</a
+        >
+        <a class="border rounded-[4px] px-[8px] py-[4px]" href="#message-us"
+          >Message Us</a
+        >
+      </nav>
+    </header>
+    <hr />
+    <!-- main content -->
+    <main class="p-[16px]" id="home">
+      <section id="home" class="home-section">
+        <h1 class="text-4xl font-bold">
+          <!-- pakai span untuk mengambil inputan nama ketika website tampil -->
+          Hi <span id="welcome-speech"></span>, Welcome to My Portofolio
+        </h1>
+        <p class="text-lg">
+          This portfolio documents a journey and body of work in the field of
+          application development — ranging from academic projects to
+          independent technology explorations. It is designed to showcase
+          technical capabilities and a practical, functional approach to design.
+        </p>
+        <div class="h-[500px] banner-img"></div>
+      </section>
+
+      <!-- our profile -->
+      <section class="profile-section" id="profile">
+        <div class="profile-overlay">
+          <div class="profile-container">
+            <div class="profile-text">
+              <h2 class="profile-title">Hi, I'm Alessandra</h2>
+              <p class="profile-description">
+                An Information Systems student with a strong interest in system
+                development, particularly in web and application-based
+                solutions. Experienced in analyzing user requirements, designing
+                efficient systems, and implementing user-friendly digital
+                solutions. Passionate about learning new technologies and
+                delivering impactful systems.
+              </p>
+              <button
+                class="profile-button"
+                onclick="window.open('https://linkedin.com/in/alessandravalentina')"
+              >
+                Check me
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- portofolio section -->
+      <!-- membuat carousel scrollable -->
+      <section class="py-12" id="porto">
+        <div class="max-w-[960px] mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-6">My Projects</h2>
+          <p class="text-base text-gray-600 mb-6">
+            These are some of the projects I have worked on recently.
+          </p>
+
+          <div
+            id="cardTrack"
+            class="flex overflow-x-auto gap-4 scroll-smooth snap-x"
+          >
+            <!-- Card 1 -->
+            <div
+              class="project-card min-w-[300px] snap-start flex-shrink-0 bg-white rounded-lg shadow p-4"
+            >
+              <img
+                src="image/nyanko sensei.jpg"
+                alt="Project 1"
+                class="rounded mb-3 w-full h-48 object-cover"
+              />
+              <h3 class="text-xl font-semibold">Pijet.in Application</h3>
+              <p class="text-sm text-gray-600">
+                Aplikasi berbasis mobile untuk layanan pijat online.
+              </p>
+              <!-- menambahkan button untuk mengakses file project (untuk ini dilakukan pada satu card terlebih dahulu) -->
+              <button
+                onclick="window.open('https://drive.google.com/drive/folders/1Gd_k__nDAwKAo1X7wHjHZh2Tw-mKVHUy?usp=drive_link', '_blank')"
+                class="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                View Project
+              </button>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="project-card min-w-[300px] snap-start flex-shrink-0 bg-white rounded-lg shadow p-4"
+            >
+              <img
+                src="image/nyanko sensei.jpg"
+                alt="Project 2"
+                class="rounded mb-3 w-full h-48 object-cover"
+              />
+              <h3 class="text-xl font-semibold">Nyanko website</h3>
+              <p class="text-sm text-gray-600">
+                web khusus nyanko. (coming soon)
+              </p>
+              <!-- button project -->
+              <button
+                onclick="window.open('https://drive.google.com/drive/folders/1Gd_k__nDAwKAo1X7wHjHZh2Tw-mKVHUy?usp=drive_link', '_blank')"
+                class="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                View Project
+              </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="project-card min-w-[300px] snap-start flex-shrink-0 bg-white rounded-lg shadow p-4"
+            >
+              <img
+                src="image/nyanko sensei.jpg"
+                alt="Project 3"
+                class="rounded mb-3 w-full h-48 object-cover"
+              />
+              <h3 class="text-xl font-semibold">Project 3</h3>
+              <p class="text-sm text-gray-600">comming soon.</p>
+              <button
+                onclick="window.open('https://drive.google.com/drive/folders/1Gd_k__nDAwKAo1X7wHjHZh2Tw-mKVHUy?usp=drive_link', '_blank')"
+                class="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                View Project
+              </button>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="project-card min-w-[300px] snap-start flex-shrink-0 bg-white rounded-lg shadow p-4"
+            >
+              <img
+                src="image/empty.jpg"
+                alt="Project 4"
+                class="rounded mb-3 w-full h-48 object-cover"
+              />
+              <h3 class="text-xl font-semibold">Empty Project</h3>
+              <p class="text-sm text-gray-600">Coming Soon.</p>
+              <button
+                onclick="window.open('https://drive.google.com/drive/folders/1Gd_k__nDAwKAo1X7wHjHZh2Tw-mKVHUy?usp=drive_link', '_blank')"
+                class="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                View Project
+              </button>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="project-card min-w-[300px] snap-start flex-shrink-0 bg-white rounded-lg shadow p-4"
+            >
+              <img
+                src="image/empty.jpg"
+                alt="Project 5"
+                class="rounded mb-3 w-full h-48 object-cover"
+              />
+              <h3 class="text-xl font-semibold">Empty Project 2</h3>
+              <p class="text-sm text-gray-600">Coming Soon.</p>
+              <button
+                onclick="window.open('https://drive.google.com/drive/folders/1Gd_k__nDAwKAo1X7wHjHZh2Tw-mKVHUy?usp=drive_link', '_blank')"
+                class="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <!-- message us -->
+      <!-- isi form lalu dikirimkan ke sebuah kotak kosong di samping form -->
+      <section
+        id="message-us"
+        class="message-us-section px-6 py-8 max-w-5xl mx-auto"
+      >
+        <h2 class="text-3xl font-bold mb-2">Message Us</h2>
+        <p class="text-base text-gray-600 mb-6">
+          Feel free to reach out with any questions.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-8">
+          <!-- Form Kiri -->
+          <form class="flex-1 space-y-4">
+            <!-- Nama -->
+            <div>
+              <label for="name-input" class="block font-medium mb-1"
+                >Name:</label
+              >
+              <input
+                class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                type="text"
+                id="name-input"
+                name="name"
+              />
+            </div>
+
+            <!-- Tanggal Lahir -->
+            <div>
+              <label for="birth-input" class="block font-medium mb-1"
+                >Tanggal Lahir:</label
+              >
+              <input
+                class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                type="date"
+                id="birth-input"
+                name="birth"
+              />
+            </div>
+
+            <!-- Jenis Kelamin -->
+            <div>
+              <label class="block font-medium mb-1">Jenis Kelamin:</label>
+              <div class="flex items-center gap-6">
+                <label class="flex items-center gap-2">
+                  <input type="radio" name="gender" value="Laki-laki" />
+                  Laki-laki
+                </label>
+                <label class="flex items-center gap-2">
+                  <input type="radio" name="gender" value="Perempuan" />
+                  Perempuan
+                </label>
+              </div>
+            </div>
+
+            <!-- Pesan -->
+            <div>
+              <label for="message-input" class="block font-medium mb-1"
+                >Pesan:</label
+              >
+              <textarea
+                class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                name="message"
+                id="message-input"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <!-- Tombol Kirim -->
+            <button
+              class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              type="button"
+              onclick="validateForm();"
+            >
+              Send Message
+            </button>
+          </form>
+
+          <!-- Kolom Kanan (Hasil atau Preview) -->
+          <aside
+            class="flex-1 border rounded p-4 min-h-[300px] bg-gray-50 align-center"
+          >
+            <p id="result-form" class="text-700"></p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <hr />
+    <footer class="p-[16px] text-center background-blue-200">
+      <p>&copy; 2025 Alessandra Valentina. All rights reserved.</p>
+    </footer>
+
+    <!-- call javascript  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

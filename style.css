@@ -1,0 +1,112 @@
+/* header section  */
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    background: orange;
+}
+
+/* nav */
+nav{
+    display: flex;
+}
+/* nav, link */
+.navigation a{
+    margin: 8px;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* logo nyanko sensei */
+.logo-tailwind{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* hover effect */
+.navigation a:hover{
+    background-color: #f0f0f0;
+    color: orange;
+}
+
+
+/* main content */
+/* section home */
+.banner-img{
+    background-image: url('../image/pngtree-vivid-abstract-texture-a-burst-of-colorful-background-image_13892083.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Profile Section */
+.profile-section {
+  background-image: url('../image/wp11244560-ena-project-sekai-wallpapers.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  position: relative;
+  color: white;
+}
+
+.profile-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay for better text visibility */
+  padding: max(20px, 10vw);
+  max-width: auto;
+  margin: auto;
+  border-radius: 12px;
+}  
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.profile-title {
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profile-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: white;
+  padding-bottom: 14px;
+}
+
+.profile-button {
+  padding: 10px 24px;
+  font-size: 16px;
+  background-color: #0a66c2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-button:hover {
+  background-color: #004a99;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-title {
+    font-size: 36px;
+  }
+
+  .profile-description {
+    font-size: 15px;
+  }
+
+  .profile-button {
+    width: 100%;
+  }
+}
